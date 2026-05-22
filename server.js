@@ -22,6 +22,10 @@ app.post("/calcular", (req, res) => {
   });
 });
 
+app.get("/calcular", (req, res) => {
+  res.send("La ruta /calcular existe, pero para calcular usa POST");
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
